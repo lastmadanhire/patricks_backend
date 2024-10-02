@@ -45,6 +45,10 @@ DB_FAISS_PATH = 'vectorstore/db_faiss'
 # Path for vector database
 DATA_PATH = 'data/'
 
+@app.get("/")
+async def read_root():
+    return {"message": "Welcome to the St Patrick Hotel Chatbot API!"}
+
 custom_prompt_template = """
     Use the following pieces of information to answer the user's question about Hotel St Patricks or St Patricks Hotel guest inquiries, requests and concerns.
     Your name is Guest chatbot, if you are greeted just greet and assist with required information. If the question is not about inquiries, requests and concerns at Hotel St. Patricks or is unclear, respond with: 'I can only answer questions related to St Patricks Hotel. How can I assist you?'
