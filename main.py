@@ -15,15 +15,12 @@ from fastapi.responses import JSONResponse
 import shutil
 from fastapi import UploadFile, File, HTTPException,Depends, status
 from fastapi.responses import FileResponse
-from fastapi_jwt_auth.exceptions import MissingTokenError, InvalidHeaderError
+
 from twilio.twiml.messaging_response import MessagingResponse
 from fastapi import FastAPI, Request, Response
 import json
 
-# added
-# Importing libs and modules
-from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
-from fastapi_jwt_auth import AuthJWT
+
 
 from passlib.context import CryptContext
 from passlib.exc import UnknownHashError
@@ -36,15 +33,6 @@ os.getenv("GOOGLE_API_KEY")
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 
-
-
-# JWT Auth settings
-class Settings(BaseModel):
-    authjwt_secret_key: str = "secret"  # Replace with a strong secret key
-
-@AuthJWT.load_config
-def get_config():
-    return Settings()
 
 # Path of vector database
 DB_FAISS_PATH = 'vectorstore/db_faiss'
