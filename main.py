@@ -24,8 +24,7 @@ import json
 # Importing libs and modules
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from fastapi_jwt_auth import AuthJWT
-import mysql.connector
-from mysql.connector import Error
+
 from passlib.context import CryptContext
 from passlib.exc import UnknownHashError
 from datetime import timedelta
