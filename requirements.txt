@@ -20,5 +20,5 @@ fastapi_jwt_auth
 passlib
 twilio
 gunicorn
-
+langchain_community
 
