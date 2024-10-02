@@ -6,7 +6,7 @@ langchain
 pypdf
 chromadb
 faiss-cpu
-#langchain_google_genai
+langchain_google_genai
 fastapi
 #pydantic
 pydantic==1.10.7
