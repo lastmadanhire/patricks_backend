@@ -15,7 +15,7 @@ requests
 #fastapi[all] starlette
 fastapi[all] 
 starlette
-mysql-connector-python
+#mysql-connector-python
 fastapi_jwt_auth
 passlib
 twilio
