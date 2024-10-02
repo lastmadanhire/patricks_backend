@@ -10,7 +10,7 @@ faiss-cpu
 langchain-google-genai
 fastapi
 pydantic
-uvicorn
+uvicorn==0.22.0
 requests
 #fastapi[all] starlette
 fastapi[all] 
