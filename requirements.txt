@@ -6,13 +6,13 @@ langchain
 pypdf
 chromadb
 faiss-cpu
-langchain_google_genai
+#langchain_google_genai
 fastapi
 pydantic
 pydantic==1.10.7
 uvicorn
 requests
-fastapi[all] starlette
+#fastapi[all] starlette
 fastapi[all] 
 starlette
 mysql-connector-python
