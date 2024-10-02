@@ -8,7 +8,7 @@ chromadb
 faiss-cpu
 #langchain_google_genai
 fastapi
-pydantic
+#pydantic
 pydantic==1.10.7
 uvicorn
 requests
@@ -19,4 +19,5 @@ mysql-connector-python
 fastapi_jwt_auth
 passlib
 twilio
+gunicorn
 
