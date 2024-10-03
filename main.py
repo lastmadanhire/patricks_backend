@@ -45,9 +45,7 @@ DB_FAISS_PATH = 'vectorstore/db_faiss'
 # Path for vector database
 DATA_PATH = 'data/'
 
-@app.get("/")
-async def read_root():
-    return {"message": "Welcome to the St Patrick Hotel Chatbot API!"}
+
 
 custom_prompt_template = """
     Use the following pieces of information to answer the user's question about Hotel St Patricks or St Patricks Hotel guest inquiries, requests and concerns.
@@ -132,3 +130,6 @@ async def whatsapp_webhook(request: Request):
     twilio_response.message(response_message)
 
     return Response(str(twilio_response), media_type="application/xml")
+@app.get("/")
+async def read_root():
+    return {"message": "Welcome to the St Patrick Hotel Chatbot API!"}
