@@ -125,6 +125,7 @@ async def whatsapp_webhook(request: Request):
     #response_message = user_input(user_message)
     #response_message = "Hello how are you"
     # Extract the 'output_text' from the response JSON
+    response_json = user_input(user_message)
     if 'output_text' in response_json:
         response_message = response_json['output_text']
     else:
