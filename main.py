@@ -124,7 +124,8 @@ async def whatsapp_webhook(request: Request):
     user_number = data.get('From')
 
     # Use your chatbot logic to generate a response
-    response_message = user_input(user_message)
+    #response_message = user_input(user_message)
+    response_message = "Hello how are you"
 
     # Send the response back to WhatsApp via Twilio
     twilio_response = MessagingResponse()
